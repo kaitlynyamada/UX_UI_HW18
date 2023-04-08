@@ -1,0 +1,118 @@
+/* 
+=========================================================================
+color styles
+========================================================================= 
+*/
+:root {
+    --color-eggplant: #472836;
+    --color-violet: #87677B;
+    --color-pink: #BDA1AD;
+}
+/* 
+=========================================================================
+typography
+========================================================================= 
+*/
+h1 h2 h3 h4 h5 h6 h6.normal h6.small {
+    color: var(--color-eggplant);
+}
+
+h1 {
+   font-family: 'Montserrat', sans-serif;font-weight: 800;
+   font-size: 96px;
+   margin: 0.5rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0.5rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0.5rem;
+
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin: 0.5rem;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0.5rem;
+}
+
+h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0.5rem;
+}
+
+h6.normal {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0.5rem;
+}
+
+h6.small {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0.5rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p.small {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+/* 
+=========================================================================
+header
+========================================================================= 
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 81px 0px 81px;
+}
+
+img.logo {
+    width: 206px;
+    height: 178px;
+}
+
+.nav-primary ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+}
+
+.nav-primary ul li {
+    margin: 0 10px;
+}
+
+.nav-primary ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
