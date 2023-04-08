@@ -105,6 +105,7 @@ img.logo {
     list-style: none;
     display: flex;
     padding: 0px;
+    margin: 0px;
 }
 
 .nav-primary ul li {
@@ -115,4 +116,62 @@ img.logo {
     text-decoration: none;
     text-transform: uppercase;
 }
+/* 
+=========================================================================
+hero grid
+========================================================================= 
+*/
+#heroGrid {
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    min-height: 800px;
+    height: 70vh;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "introduction introduction"
+    "visual underline";
+}
 
+#name {
+    grid-area: introduction;
+    padding-left: 75px;
+}
+
+#name h3 {
+    display: inline;
+}
+
+#name h3.color {
+    color: var(--color-violet);
+}
+
+#name h1.color {
+    color: var(--color-violet);
+}
+
+#visual {
+    grid-area: visual;
+    padding: 0;
+    margin: 0;
+}
+
+#underline {
+    grid-area: underline;
+    padding:0px;
+    margin: 0px;
+}
+
+#underline h6.normal {
+    border-bottom: 4px solid var(--color-violet);
+}
+
+/*hero visual*/
+img.hero-visual__image {
+    position: absolute;
+    left: 125px;
+    top: 490px;
+    opacity: 69%;
+    transform: scale(2) rotate(-9deg);
+}
