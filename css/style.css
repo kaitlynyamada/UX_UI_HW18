@@ -373,15 +373,3 @@ footer
     margin: 0;
 }
 
-#footer-visual img {
-    float: left;
-    transform: scale(1.5);
-}
-
-.footer-image {
-    position: absolute;
-    top: 3673px;
-    left: 58%;
-    transform: scale(1.6);
-    opacity: 69%;
-}
