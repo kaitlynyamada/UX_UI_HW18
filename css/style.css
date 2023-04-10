@@ -90,6 +90,11 @@ p.small {
     font-weight: 400;
     font-size: 15px;
 }
+
+p.bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 /* 
 =========================================================================
 header
@@ -123,6 +128,15 @@ img.logo {
     text-transform: uppercase;
     color: var(--color-violet);
 }
+
+/*media query for header*/
+/*small*/
+@media only screen and (max-width:576px) {
+    .nav-primary {
+        opacity: 0;
+    }
+}
+
 /* 
 =========================================================================
 hero grid & hero image
@@ -183,6 +197,77 @@ img.hero-visual__image {
     transform: scale(1.9) rotate(-9deg);
 }
 
+
+/*media queries for hero section*/
+/*small*/
+@media only screen and (max-width:576px) {
+    #heroGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "introduction"
+        "underline"
+        "visual";
+    }
+
+    #name {
+        padding: 10%;
+    }
+
+    #underline {
+        padding: 25% 0% 25% 25%;
+
+    }
+
+    img.hero-visual__image {
+        position: absolute;
+        top: 550px;
+        left: -100px;
+        transform: scale(1.2) rotate(-9deg);
+    }
+}
+/*medium*/
+@media only screen and (max-width:768px) {
+    #heroGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "introduction"
+        "underline"
+        "visual";
+    }
+
+    #name {
+        padding: 10%;
+    }
+
+    #underline {
+        padding: 25% 0% 25% 25%;
+
+    }
+
+    img.hero-visual__image {
+        position: absolute;
+        top: 550px;
+        left: -100px;
+        transform: scale(1.2) rotate(-9deg);
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+    #heroGrid {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "introduction introduction"
+        "visual underline";
+    }
+
+    img.hero-visual__image {
+        left: -60px;
+    }
+}
 /* 
 =========================================================================
 section: about me
@@ -202,6 +287,27 @@ section: about me
     margin: 60px 750px 60px 155px;
 }
 
+/*media query for about section */
+/*small*/
+@media only screen and (max-width:576px) {
+    .about-content p {
+        margin: 10%;
+    }
+}
+
+/*medium*/
+@media only screen and (max-width:768px) {
+    .about-content p {
+        margin: 10%;
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+    .about-content p {
+        margin: 10% 40% 10% 10%;
+    }
+}
 /* 
 =========================================================================
 section: my skills
@@ -222,9 +328,28 @@ section: my skills
     margin: 60px 155px 60px 750px;
 }
 
-.skills-content p.bold {
-    font-weight: 700px;
+/*media query for skills section*/
+/*small*/
+@media only screen and (max-width:576px) {
+    .skills-content {
+        margin: 10%;
+    }
 }
+
+/*medium*/
+@media only screen and (max-width:768px) {
+    .skills-content {
+        margin: 10%;
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+    .skills-content {
+        margin: 10% 10% 10% 40%;
+    }
+}
+
 /* 
 =========================================================================
 section: my tools
@@ -243,6 +368,28 @@ section: my tools
 
 .tools-content {
     margin: 60px 750px 60px 155px;
+}
+
+/*media query for tools section*/
+/*small*/
+@media only screen and (max-width:576px) {
+    .tools-content {
+        margin: 10%;
+    }
+}
+
+/*medium*/
+@media only screen and (max-width:768px) {
+    .tools-content {
+        margin: 10%;
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+    .tools-content {
+        margin: 10% 40% 10% 10%;
+    }
 }
 /* 
 =========================================================================
@@ -285,7 +432,29 @@ section: my works
 
 .sara-tags {
     display: flex;
-    justify-content: right;
+}
+
+
+/* media query for works section*/
+/*small*/
+@media only screen and (max-width:576px) {
+    .works-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*medium*/
+@media only screen and (max-width:768px) {
+    .works-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+
 }
 
 /* 
@@ -307,6 +476,30 @@ section: contact
 .contact-content {
     margin: 60px 750px 60px 155px;
 }
+
+/*media query for contact section*/
+/*small*/
+@media only screen and (max-width:576px) {
+    .contact-content {
+        margin: 5%;
+    }
+}
+
+/*medium*/
+@media only screen and (max-width:768px) {
+    .contact-content {
+        margin: 10%;
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+    .contact-content {
+        margin: 10% 40% 10% 10%;
+    }
+}
+
+
 
 /* 
 =========================================================================
@@ -373,3 +566,61 @@ footer
     margin: 0;
 }
 
+/*media query for footer*/
+/*small*/
+@media only screen and (max-width:576px) {
+    #footerGrid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "footer-logo footer-nav"
+        "social-icons footer-visual";
+    }
+
+    #footer-logo img {
+        width: 277px;
+        height: 250px;
+    }
+
+    #social-icons i {
+        padding: 0;
+    }
+}
+
+/*medium*/
+@media only screen and (max-width:768px) {
+    #footerGrid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+        "footer-logo footer-nav"
+        "social-icons footer-visual";
+    }
+
+    #footer-logo img {
+        width: 320px;
+        height: 250px;
+        transform: scale(1.35)
+        padding: 5px;
+    }
+
+    #social-icons i {
+        padding: 0;
+    }
+}
+
+/*large*/
+@media only screen and (max-width:992px) {
+    #footer-logo img {
+        height: auto;
+        width: 334px;
+    }
+
+    #social-icons {
+        padding: 0;
+    }
+
+    #footer-nav {
+        padding: 50% 0%;
+    }
+}
